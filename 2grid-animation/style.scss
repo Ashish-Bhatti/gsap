@@ -1,0 +1,38 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+}
+
+main{
+    border: 2px solid red;
+    width: auto;
+    background: #000;
+    // height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(15,4%);
+    gap: 1.5rem;
+    row-gap: .25rem;
+    justify-content: center;
+
+    div{
+        width: 5vw;
+        aspect-ratio: 1/1;
+        // border: 1px solid red;
+        border-radius: 1rem;
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+
+        .box{
+            background: #0AE448;
+            width: 40%;
+            height: 40%;
+        }
+    }
+}

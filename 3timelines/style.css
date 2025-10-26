@@ -1,0 +1,29 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+}
+
+main {
+  border: 2px solid red;
+  background: black;
+  height: 100%;
+}
+main .box {
+  width: 100px;
+  border-radius: 1rem;
+  aspect-ratio: 1/1;
+  transform: translate(50%, 50%);
+  margin-block: 1rem;
+}
+main #green {
+  background: rgb(124, 255, 48);
+}
+main #red {
+  background: rgb(255, 48, 48);
+}/*# sourceMappingURL=style.css.map */
