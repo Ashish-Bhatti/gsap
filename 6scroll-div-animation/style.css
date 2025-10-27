@@ -1,0 +1,47 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+main {
+  width: 100%;
+}
+main .top {
+  height: 100vh;
+  background: rgb(255, 125, 125);
+  position: relative;
+  z-index: 10;
+}
+main .hero {
+  height: 1000px;
+  border: 2px solid blue;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+}
+main .hero .a {
+  background: pink;
+  grid-area: 1/1;
+}
+main .hero .b {
+  background: greenyellow;
+  grid-area: 1/1;
+}
+main .hero .c {
+  background: rgb(87, 255, 207);
+  grid-area: 1/1;
+}
+main .hero .d {
+  background: rgb(227, 87, 255);
+  grid-area: 1/1;
+}/*# sourceMappingURL=style.css.map */
