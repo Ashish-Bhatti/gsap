@@ -1,0 +1,29 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  background: #000;
+  color: aliceblue;
+}
+
+main {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 2px solid white;
+  width: 50%;
+  aspect-ratio: 5/4;
+}
+main div {
+  width: 100px;
+  aspect-ratio: 1/1;
+  background: greenyellow;
+  border-radius: 20px;
+}/*# sourceMappingURL=style.css.map */
