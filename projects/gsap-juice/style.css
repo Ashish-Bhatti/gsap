@@ -1,0 +1,64 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  background: #000;
+  color: antiquewhite;
+}
+
+main {
+  width: 100%;
+  height: 100%;
+}
+main .main-content {
+  position: fixed;
+  z-index: 1;
+  background: rgba(255, 0, 0, 0.224);
+  width: 100vw;
+  height: 100vh;
+}
+main .wrapper {
+  z-index: 999;
+  width: 50%;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+main .wrapper .slider-wrap {
+  border: 2px solid red;
+  width: 100%;
+}
+main .wrapper .slider-wrap .slider {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  border: 2px solid goldenrod;
+  display: grid;
+  align-items: end;
+  padding-bottom: 20vh;
+}
+main .wrapper .slider-wrap .slider .text {
+  grid-area: 1/1;
+  background-image: url(./img/green-bg.png);
+}
+main .wrapper .slider-wrap .slider .text h1 {
+  font-size: 21rem;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  word-spacing: 3rem;
+  text-align: center;
+}
+main .wrapper .slider-wrap .slider .image {
+  grid-area: 1/1;
+  text-align: center;
+}
+main .wrapper .slider-wrap .slider .image img {
+  width: 40%;
+  transform: translateX(-11px);
+}/*# sourceMappingURL=style.css.map */
