@@ -8,9 +8,9 @@ html,
 body {
     height: 100%;
     width: 100%;
-    background: #000;
     color: antiquewhite;
 }
+
 main {
     // border: 5px solid purple;
     width: 100%;
@@ -19,7 +19,6 @@ main {
     .main-content {
         position: fixed;
         z-index: 1;
-        background: rgba(255, 0, 0, 0.224);
         width: 100vw;
         height: 100vh;
     }
@@ -33,22 +32,24 @@ main {
         transform: translateX(-50%);
 
         .slider-wrap {
-            border: 2px solid red;
-            width: 100%;
+            // border: 4px solid black;
+            // width: auto;
             .slider {
                 position: relative;
 
                 width: 100%;
                 height: 100vh;
-                border: 2px solid goldenrod;
+                // border: 2px solid goldenrod;
                 display: grid;
                 align-items: end;
                 padding-bottom: 20vh;
                 .text {
                     grid-area: 1/1;
                     background-image: url(./img/green-bg.png);
+                    background-size: contain;
                     h1 {
-                        font-size: 21rem;
+                        // font-size: 21rem;
+                        font-size: 18vw;
                         font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
                         word-spacing: 3rem;
                         text-align: center;
@@ -63,6 +64,31 @@ main {
                         transform: translateX(-11px);
                     }
                 }
+            }
+        }
+
+        #slide2{
+            .text{
+                background-image:url(./img/red-bg.png) ;
+            }
+            img{
+                transform: translateX(30px);
+            }
+        }
+        #slide3{
+            .text{
+                background-image:url(./img/yellow-bg.png) ;
+            }
+            img{
+                transform: translateX(20px);
+            }
+        }
+        #slide4{
+            .text{
+                background-image:url(./img/purple-bg.png) ;
+            }
+            img{
+                transform: translateX(20px);
             }
         }
     }

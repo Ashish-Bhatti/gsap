@@ -1,0 +1,47 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  background: #000;
+  color: antiquewhite;
+}
+
+main nav {
+  text-align: center;
+  position: fixed;
+  height: 100%;
+  left: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+main nav a {
+  color: antiquewhite;
+  font-size: 2rem;
+  padding: 1rem 2rem;
+  background: green;
+  border-radius: 1rem;
+}
+main section {
+  height: 100vh;
+}
+main #section1 {
+  background: radial-gradient(circle, rgb(118, 209, 157) 0%, rgb(37, 155, 87) 100%);
+}
+main #section2 {
+  background: radial-gradient(circle, rgb(240, 122, 149) 0%, rgb(217, 42, 84) 100%);
+}
+main #section3 {
+  background: radial-gradient(circle, rgb(255, 184, 129) 0%, rgb(255, 126, 61) 100%);
+}
+main #section4 {
+  background: radial-gradient(circle, rgb(171, 114, 219) 0%, rgb(106, 13, 173) 100%);
+}/*# sourceMappingURL=style.css.map */
