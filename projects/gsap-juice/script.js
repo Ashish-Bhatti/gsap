@@ -37,7 +37,7 @@ function goTo(index) {
         scrollTo: {
             y: '#slide' + (index + 1),
         },
-        ease: 'power2.inOut',
+        ease: 'none',
         onComplete: () => {
             currentSlide = index;
             isAnimating = false;
@@ -73,7 +73,7 @@ slides.forEach((slide, i) => {
     let tl = gsap.timeline({
         scrollTrigger: {
             trigger: triggerEl,
-            markers: true,
+            // markers: true,
             start: 'top top',
             end: 'bottom top',
             scrub: true,

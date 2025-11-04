@@ -9,6 +9,13 @@ body {
   height: 100%;
   width: 100%;
   color: antiquewhite;
+  font-family: "DM Sans", sans-serif;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+body::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Opera */
 }
 
 main {
@@ -17,9 +24,121 @@ main {
 }
 main .main-content {
   position: fixed;
-  z-index: 1;
-  width: 100vw;
-  height: 100vh;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 95vw;
+  height: 95vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+main .main-content .btn {
+  padding: 0.8rem 1.6rem;
+  font-weight: 500;
+  font-size: 1rem;
+  border-radius: 1.5rem;
+  border: none;
+}
+main .main-content #inactive-btn {
+  background: rgba(255, 255, 255, 0.377);
+  color: white;
+}
+main .main-content nav .nav-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0;
+}
+main .main-content nav .nav-bar img {
+  width: 150px;
+}
+main .main-content nav .nav-bar .nav-links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+main .main-content nav .nav-bar .nav-links ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+main .main-content nav .nav-bar .nav-links ul li {
+  list-style-type: none;
+  font-weight: 600;
+}
+main .main-content nav .pages {
+  text-align: center;
+}
+main .main-content .content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0;
+  align-items: start;
+}
+main .main-content .content .right-content h2 {
+  font-size: 3rem;
+  padding-bottom: 1rem;
+  font-weight: 100;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+}
+main .main-content .content .right-content p {
+  width: 350px;
+  font-size: 1.1rem;
+  line-height: 1.5rem;
+}
+main .main-content .content .left-content p {
+  font-size: 1.1rem;
+  line-height: 1.5rem;
+  text-align: center;
+  padding-bottom: 1rem;
+}
+main .main-content .content .left-content .bottle-size button {
+  width: 75px;
+  aspect-ratio: 1/1;
+  font-size: 1rem;
+  border-radius: 50%;
+  border: none;
+  margin-inline-start: 0.2rem;
+}
+main .main-content .bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0;
+  /* Before line */
+  /* Left line */
+  /* Right line */
+}
+main .main-content .bottom .social-media {
+  font-size: 1.5rem;
+  display: flex;
+  gap: 2rem;
+}
+main .main-content .bottom p {
+  position: relative;
+  display: inline-block; /* makes width fit text */
+  text-align: center;
+}
+main .main-content .bottom p::before,
+main .main-content .bottom p::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  width: 40px; /* line length */
+  height: 2px; /* line thickness */
+  background: #fff; /* line color */
+}
+main .main-content .bottom p::before {
+  left: -50px; /* distance from text */
+  transform: translateY(-50%);
+}
+main .main-content .bottom p::after {
+  right: -50px;
+  transform: translateY(-50%);
 }
 main .wrapper {
   z-index: 999;
